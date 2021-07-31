@@ -1,7 +1,11 @@
 ---
 title: "BIOS 6611"
 output: 
-  html_document
+  html_document:
+    includes:
+      in_header: 
+        - header.html
+        - hero-image.html
 ---
 
 ### Description
