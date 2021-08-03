@@ -19,7 +19,6 @@ library(dplyr)
 
 This page includes the asynchronous lecture videos, PDF slides, and other materials for Biostatistical Methods I (BIOS 6611). The material is broadly broken down by theme with links provided to download materials or view the videos. **A brief overview of the material covered in a given lecture can be viewed by hovering over or clicking the given "Lecture Topic".**
 
-*Page in progress.*
 
 ## Probability and Distributions
 

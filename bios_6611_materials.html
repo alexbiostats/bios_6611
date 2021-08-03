@@ -13,7 +13,7 @@
 
 <title>BIOS 6611 Materials</title>
 
-<script src="site_libs/header-attrs-2.8/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -378,7 +378,7 @@ div.tocify {
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="mailto:alex.kaizer@cuanschutz.edu">
-    <span class="fas fa-envelope fa-lg"></span>
+    <span class="fa fa-envelope fa-lg"></span>
      
   </a>
 </li>
@@ -432,7 +432,6 @@ $(document).ready(function(){
 });
 </script>
 <p>This page includes the asynchronous lecture videos, PDF slides, and other materials for Biostatistical Methods I (BIOS 6611). The material is broadly broken down by theme with links provided to download materials or view the videos. <strong>A brief overview of the material covered in a given lecture can be viewed by hovering over or clicking the given “Lecture Topic”.</strong></p>
-<p><em>Page in progress.</em></p>
 <div id="probability-and-distributions" class="section level2">
 <h2>Probability and Distributions</h2>
 <p>The first theme in BIOS 6611 discusses core concepts in statistics (e.g., simulation studies, estimators, estimation) and both discrete and continuous probability distributions.</p>
@@ -1376,6 +1375,9 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
 
     // move toc-ignore selectors from section div to header
     $('div.section.toc-ignore')
