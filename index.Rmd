@@ -1,5 +1,5 @@
 ---
-title: "BIOS 6611"
+title: ""
 output: 
   html_document:
     includes:

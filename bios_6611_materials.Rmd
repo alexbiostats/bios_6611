@@ -17,11 +17,13 @@ library(kableExtra)
 library(dplyr)
 ```
 
-This page includes the asynchronous lecture videos, PDF slides, and other materials for Biostatistical Methods I (BIOS 6611). The material is broadly broken down by theme with links provided to download materials or view the videos.
+This page includes the asynchronous lecture videos, PDF slides, and other materials for Biostatistical Methods I (BIOS 6611). The material is broadly broken down by theme with links provided to download materials or view the videos. **A brief overview of the material covered in a given lecture can be viewed by hovering over or clicking the given "Lecture Topic".**
 
 *Page in progress.*
 
 ## Probability and Distributions
+
+The first theme in BIOS 6611 discusses core concepts in statistics (e.g., simulation studies, estimators, estimation) and both discrete and continuous probability distributions.
 
 ```{r, echo=F}
 prob_dist_lectures <- c('Intro to Statistical Topics',
@@ -100,7 +102,7 @@ prob_dist$Lecture <- cell_spec(prob_dist$Lecture, popover = spec_popover(
   position = 'top'
 ))
 
-kbl(x = prob_dist, escape=F, align='lcc', col.names = c('Lecture Topic','Slides','YouTube Link')) %>%
+kbl(x = prob_dist, escape=F, align='lcc', col.names = c('Lecture Topic','Slides','Video Link')) %>%
   column_spec(1, width='18em') %>%
   column_spec(2, width='5em') %>%
   column_spec(3, width='5em') %>%
@@ -110,14 +112,474 @@ kbl(x = prob_dist, escape=F, align='lcc', col.names = c('Lecture Topic','Slides'
 
 ## Hypothesis Testing, Power, Sample Size
 
+The second theme of BIOS 6611 introduces the framework for hypothesis testing based on *null hypothesis significance testing* (NHST). We then discuss the concept of power calculations and work through practical examples by hand and using R to estimate power, sample size, or a detectable difference.
+
+```{r, echo=F}
+hyp_test_lectures <- c('Fisher\'s p-value',
+  'The Neyman-Pearson Tradeoffs',
+  'Null Hypothesis Significance Testing (Fisher-Neyman-Pearson Hybrid)',
+  'Statistical Power and Derivations for a Two-Sided, One-Sample Z-test',
+  'Power Calculation Examples in R')
+
+hyp_test_desc <- c('Ever wonder where ubiquitous p-value comes from? Well it started out a little bit differently than we think of it today with the modern NHST framework. In this lecture we introduce Fisher\'s p-value and the idea of permutation tests.',
+                   'Neyman and Pearson developed a competing framework for significance testing from Fisher based on rejection regions. It ultimately led to the concepts of type I errors and power we use for NHST today.',
+                   'The modern framework used for significance testing is an amalgamation of Fisher-Neyman-Pearson, leading to some nuanced interpretations.',
+                   'Power can be a scary and foreign concept, but we break it down here for the normal distribution with known SD and walk through plenty of examples.',
+                   'Examples of power calculations using functions in R.'
+)
+
+hyp_test_pdf_link <- paste0('./files/bios6611/',
+                             c('W4/FishersPvalue.pdf',
+                               'W4/Neyman_Pearson_tradeoffs.pdf',
+                               'W4/NHST.pdf',
+                               'W4/powerIntro_deriveZ.pdf',
+                               'W4/power_examples.pdf'))
+hyp_test_pdf <- paste0('[PDF](',hyp_test_pdf_link,')')
+
+hyp_test_videos_link <-c('https://youtu.be/a5UIRGaB4bk',
+  'https://youtu.be/4boPRRKl0GY',
+  'https://youtu.be/s-L5SKskBv8',
+  'https://youtu.be/JVvHAJkm-pk',
+  'https://youtu.be/HNQzFZWpIpY'
+  )
+hyp_test_videos <- paste0('[YouTube](',hyp_test_videos_link,')')
+
+hyp_test <- data.frame(
+  'Lecture' = hyp_test_lectures,
+  'File' = hyp_test_pdf,
+  'Video' = hyp_test_videos)
+
+hyp_test$Lecture <- cell_spec(hyp_test$Lecture, popover = spec_popover(
+  content = hyp_test_desc,
+  title = 'General Overview',
+  position = 'top'
+))
+
+kbl(x = hyp_test, escape=F, align='lcc', col.names = c('Lecture Topic','Slides','Video Link')) %>%
+  column_spec(1, width='18em') %>%
+  column_spec(2, width='5em') %>%
+  column_spec(3, width='5em') %>%
+  kable_styling(bootstrap_options = c("striped")) 
+```
+
 
 ## Conditional Probability, Effect Measures, Inference for 2x2 Tables
+
+Our third theme in BIOS 6611 explores conditional probability and its application for diagnostic testing as well as studies with 2x2 tables and inference based on risk differences, risk ratios, or odds ratios.
+
+```{r, echo=F}
+diag_2x2_lectures <- c('Diagnostic Testing: Sensitivity and Specificity',
+  'Diagnostic Testing: Predictive Values and Odds',
+  'Diagnostic Testing: ROC Curves',
+  'Observational Study Designs',
+  '2x2 Tables Measures of Effect: RD, RR, OR',
+  '2x2 Tables and Tests of Association'
+)
+
+diag_2x2_desc <- c('The use of sensitivity and specificity to describe the performance of a diagnostic test.',
+                   'The use of predictive values, likelihood ratios, and posterior probabilities to summarize the probability of having a disease given some population or study prevalence.',
+                   'How to use a continuous predictor to evaluate an association with a disease or other binary outcome based on receiver operating characteristic (ROC) curves, including two approaches to identifying an optimal threshold.',
+                   'A brief introduction to cohort, case-control, and cross-sectional obesrvational study designs.',
+                   'The risk difference, risk ratio, and odds ratio for 2x2 contingency tables.',
+                   'Use of the Chi-squared, Fisher\'s, Barnard\'s, and McNemar\'s tests for 2x2 contingency tables.'
+)
+
+diag_2x2_pdf_link <- paste0('./files/bios6611/',
+                             c('W5/Conditional_Probability_SeSp.pdf',
+                               'W5/Conditional_Probability_PPVNPV.pdf',
+                               'W5/Conditional_Probability_ROC.pdf',
+                               'W5/StudyDesigns.pdf',
+                               'W5/RD_RR_OR.pdf',
+                               'W5/Table2x2_ChiSq_Fishers.pdf'))
+diag_2x2_pdf <- paste0('[PDF](',diag_2x2_pdf_link,')')
+
+diag_2x2_videos_link <-c('https://youtu.be/-qJhRO8rAv4',
+  'https://youtu.be/ewbMgQWTr8I',
+  'https://youtu.be/hgFdbFwaqGk',
+  'https://youtu.be/nqg2qHk304I',
+  'https://youtu.be/xTdEszAC3a4',
+  'https://youtu.be/4_erFG9VWhw'
+  )
+diag_2x2_videos <- paste0('[YouTube](',diag_2x2_videos_link,')')
+
+diag_2x2 <- data.frame(
+  'Lecture' = diag_2x2_lectures,
+  'File' = diag_2x2_pdf,
+  'Video' = diag_2x2_videos)
+
+diag_2x2$Lecture <- cell_spec(diag_2x2$Lecture, popover = spec_popover(
+  content = diag_2x2_desc,
+  title = 'General Overview',
+  position = 'top'
+))
+
+kbl(x = diag_2x2, escape=F, align='lcc', col.names = c('Lecture Topic','Slides','Video Link')) %>%
+  column_spec(1, width='18em') %>%
+  column_spec(2, width='5em') %>%
+  column_spec(3, width='5em') %>%
+  kable_styling(bootstrap_options = c("striped")) 
+```
 
 
 ## Bootstrap Sampling and Nonparametric Methods
 
+The fourth theme of BIOS 6611 explores bootstrap resampling, permutation testing, and other nonparametric methods for hypothesis testing.
+
+```{r, echo=F}
+boot_nonp_lectures <- c('Bootstrap Resample Introduction',
+  'Confidence Intervals and One-Sample Bootstraps',
+  'Two-Sample Bootstraps',
+  'Permutation Tests',
+  'Nonparametric Tests'
+)
+
+boot_nonp_desc <- c('Bootstrapping resamples with replacement to estimate the sampling distribution of almost any statistic. The theory and general steps are provided, with a simple example.',
+                    'The calculation of bootstrap percentile and normal percentile confidence intervals for bootstraps. A one-sample example of arsenic in Bagladesh groundwater is worked through in R.',
+                    'The bootstrap is extended to the case with two-samples, both unmatched and matched.',
+                    'Permutation tests resample without replacement. Two examples are provided, one comparing the means of two groups and another calculating the chi-squared statistic without assumming the chi-squared distribution.',
+                    'The Wilcoxon rank sum (two independent samples), Wilcoxon signed rank (paired samples), and sign tests are presented with examples. Additionally, tests to compare the medians of two groups are denoted.'
+)
+
+boot_nonp_pdf_link <- paste0('./files/bios6611/',
+                             c('W6/Bootstrap_intro.pdf',
+                               'W6/Bootstrap_CIs_oneSampExamp.pdf',
+                               'W6/Bootstrap_CIs_twoSampExamp.pdf',
+                               'W6/PermutationTests.pdf',
+                               'W6/NonparametricTests.pdf'))
+boot_nonp_pdf <- paste0('[PDF](',boot_nonp_pdf_link,')')
+
+boot_nonp_videos_link <-c('https://youtu.be/ZkvmBzh1hxE',
+  'https://youtu.be/2ugidlN9jFg',
+  'https://youtu.be/fsZLAl4sfm0',
+  'https://youtu.be/Ei-SKCTrKKc',
+  'https://youtu.be/Hy6r5sAK3qw'
+  )
+boot_nonp_videos <- paste0('[YouTube](',boot_nonp_videos_link,')')
+
+boot_nonp <- data.frame(
+  'Lecture' = boot_nonp_lectures,
+  'File' = boot_nonp_pdf,
+  'Video' = boot_nonp_videos)
+
+boot_nonp$Lecture <- cell_spec(boot_nonp$Lecture, popover = spec_popover(
+  content = boot_nonp_desc,
+  title = 'General Overview',
+  position = 'top'
+))
+
+kbl(x = boot_nonp, escape=F, align='lcc', col.names = c('Lecture Topic','Slides','Video Link')) %>%
+  column_spec(1, width='18em') %>%
+  column_spec(2, width='5em') %>%
+  column_spec(3, width='5em') %>%
+  kable_styling(bootstrap_options = c("striped")) 
+```
+
 
 ## Simple Linear Regression
 
+In our fifth theme of BIOS 6611 we introduce, derive, and apply methods for linear regression with a single predictor for a continuous outcome. The lectures include a mix of applied and theoretical content.
+
+```{r, echo=F}
+simp_reg_lectures <- c('Simple Linear Regression (SLR) Introduction',
+  'SLR: Find the "Best" Fit and Summary Formulas',
+  'SLR: Simple Application and Hypothesis Testing',
+  'SLR: Quality of Fit, F-test, and ANOVA Table',
+  'SLR: Prediction vs. Confidence Intervals',
+  'Derivation of SLR Regression Coefficients',
+  'Variance of Regression Coefficients',
+  'Coefficient of Determination and Correlation Connection',
+  'Residuals',
+  'Diagnostic Plots',
+  'SLR Example: Continuous Predictor',
+  'SLR Example: Categorical Predictor',
+  'Transformations to Remove Heteroscedasticity'
+)
+
+simp_reg_desc <- c('Simple linear regression allows a continuous outcome with any type of predictor. We introduce motivation for SLR and discuss its modeling assumptions.',
+                   'There are many potential ways to model a linear relationship, a few candidates are examined with least squares estimation being our optimal approach. For SLR we can calculate our regression coefficients with the presented summary formulas.',
+                   'Hypothesis testing for linear regression is introduced with examples in R and SAS. Interpretation of the model coefficients is presented step-by-step.',
+                   'The total variability of our outcome, Y, can be partitioned to identify what is explained by the predictor(s) in the regression model. The coefficient of determination, also called R-squared, is one measure of the variability described. The ANOVA table and F-test are introduced in the context of linear regression.',
+                   'Confidence intervals (for the population prediction) and prediction intervals (for a single individual\'s prediction) are derived and examples presented.',
+                   'Step-by-step derivations of the ordinary least squares regression coefficients.',
+                   'Step-by-step derivations of the variance of our regression coefficients.',
+                   'The connection between the coefficient of determination and Pearson\'s linear correlation.',
+                   'Observed, standardized, studentized, press, and jackknife residuals are described and their role in model evaluation is introduced.',
+                   'The use of residuals and other plots to evaluate the linear regression model assumptions.',
+                   'A detailed example of simple linear regression with a continuous predictor.',
+                   'A detailed example of simple linear regression with a categorical predictor.',
+                   'In cases of model assumptions being violated, we can sometimes use data transformations (e.g., log-transform, square root) to meet our assumptions.'
+)
+
+simp_reg_pdf_link <- paste0('./files/bios6611/',
+                             c('W7/SLR_intro.pdf',
+                               'W7/SLR_bestFit.pdf',
+                               'W7/SLR_application.pdf',
+                               'W7/SLR_qualityFit.pdf',
+                               'W7/SLR_CIvsPI.pdf',
+                               'W8/OLS_derivations.pdf',
+                               'W8/OLS_variance_derivations.pdf',
+                               'W8/OLS_correlation_determination_connection.pdf',
+                               'W9/residuals.pdf',
+                               'W9/DiagnosticPlots.pdf',
+                               'W9/slr_contpred_example.pdf',
+                               'W9/slr_catpred_example.pdf',
+                               'W9/heteroscedastic_transformations.pdf'))
+simp_reg_pdf <- paste0('[PDF](',simp_reg_pdf_link,')')
+
+simp_reg_videos_link <-c('https://youtu.be/r3dYVAD8tU8',
+  'https://youtu.be/WBxa6U0K2LE',
+  'https://youtu.be/jXeiwt26IFA',
+  'https://youtu.be/w10GAiI69ts',
+  'https://youtu.be/DxZHqTAZXOg',
+  'https://youtu.be/zcVVxu0w03I',
+  'https://youtu.be/kM5BlXY7oqQ',
+  'https://youtu.be/bBn47eDQOB0',
+  'https://youtu.be/XzMWa_Z_jrk',
+  'https://youtu.be/tlBDzr3t9lY',
+  'https://youtu.be/cjhrO4OK54A',
+  'https://youtu.be/Egmuu0b8Yik',
+  'https://youtu.be/sEpU3vCOfRI'
+  )
+simp_reg_videos <- paste0('[YouTube](',simp_reg_videos_link,')')
+
+simp_reg <- data.frame(
+  'Lecture' = simp_reg_lectures,
+  'File' = simp_reg_pdf,
+  'Video' = simp_reg_videos)
+
+simp_reg$Lecture <- cell_spec(simp_reg$Lecture, popover = spec_popover(
+  content = simp_reg_desc,
+  title = 'General Overview',
+  position = 'top'
+))
+
+kbl(x = simp_reg, escape=F, align='lcc', col.names = c('Lecture Topic','Slides','Video Link')) %>%
+  column_spec(1, width='18em') %>%
+  column_spec(2, width='5em') %>%
+  column_spec(3, width='5em') %>%
+  kable_styling(bootstrap_options = c("striped")) 
+```
+
 
 ## Multiple Linear Regression
+
+The final theme of BIOS 6611 expands our linear regression framework to account for more than one predictor. This results in a variety of different applications and topics that are broken down further into subthemes below.
+
+### MLR Introduction
+
+```{r, echo=F}
+mult_reg_lectures <- c('Multiple Linear Regression (MLR): Motivation, Assumptions, Example',
+  'MLR: Diagnostic Plots and Multicollinearity',
+  'MLR: Inference on Independent Variables',
+  'Multiple Testing/Comparisons'
+)
+
+mult_reg_desc <- c('The extension from one predictor (simple) to two or more predictors (multiple) in regression.',
+                   'Diagnostic plots in the context of linear regression with multiple predictors.',
+                   'The use of the overall F-test, partial F-test, and t-test to evaluate the significance of the overall model, a subset of predictors, and a single predictor, respectively.',
+                   'Multiple comparisons represent a potential challenge in statistical inference. Different approaches to adjust for multiple comparisons are included, with an emphasis on the False Discovery Rate (FDR).'
+)
+
+mult_reg_pdf_link <- paste0('./files/bios6611/',
+                             c('W10/MLR_Introduction.pdf',
+                               'W10/MLR_diagnostics_vif.pdf',
+                               'W10/MLR_IVinference.pdf',
+                               'W10/multiple_comparisons.pdf'))
+mult_reg_pdf <- paste0('[PDF](',mult_reg_pdf_link,')')
+
+mult_reg_videos_link <-c('https://youtu.be/a7rBONeAHfA',
+  'https://youtu.be/fA-Ud07gPE8',
+  'https://youtu.be/2a4RY85D4Qg',
+  'https://youtu.be/0OHkLET008Q'
+  )
+mult_reg_videos <- paste0('[YouTube](',mult_reg_videos_link,')')
+
+mult_reg <- data.frame(
+  'Lecture' = mult_reg_lectures,
+  'File' = mult_reg_pdf,
+  'Video' = mult_reg_videos)
+
+mult_reg$Lecture <- cell_spec(mult_reg$Lecture, popover = spec_popover(
+  content = mult_reg_desc,
+  title = 'General Overview',
+  position = 'top'
+))
+
+kbl(x = mult_reg, escape=F, align='lcc', col.names = c('Lecture Topic','Slides','Video Link')) %>%
+  column_spec(1, width='18em') %>%
+  column_spec(2, width='5em') %>%
+  column_spec(3, width='5em') %>%
+  kable_styling(bootstrap_options = c("striped")) 
+```
+
+
+### Analysis of Variance (ANOVA) and Post-hoc Testing
+
+```{r, echo=F}
+anova_post_lectures <- c('Coding Categorical Variables',
+  'One-Way ANOVA and Connections to Regression',
+  'Post-hoc Testing for ANOVA',
+  'Kruskal-Wallis: A Nonparametric ANOVA'
+)
+
+anova_post_desc <- c('Different strategies for coding categorical variables are discussed in addition to the frequently used indicator coding.',
+                     'The one-way analysis of variance can be used to compare group means. The test for homogeneous variances for ANOVA is presented along with the connection to linear regression.',
+                     'If a significant difference is found across all group means in ANOVA, post-hoc testing can be used for conduct pairwise comparisons while adjusting for multiple testing.',
+                     'If our parametric assumptions for one-way ANOVA are violated, we can conduct a nonparametric comparison of the mean rank across groups.'
+)
+
+anova_post_pdf_link <- paste0('./files/bios6611/',
+                             c('W11/CodingCategoricalVariables.pdf',
+                               'W11/ANOVA.pdf',
+                               'W11/ANOVA_posthoc.pdf',
+                               'W11/ANOVA_nonparametric.pdf'))
+anova_post_pdf <- paste0('[PDF](',anova_post_pdf_link,')')
+
+anova_post_videos_link <-c('https://youtu.be/4DUXPlPNAbU',
+  'https://youtu.be/6fuTEN2XzNI',
+  'https://youtu.be/1lu4bHLz3V4',
+  'https://youtu.be/nOeN4GGixSk'
+  )
+anova_post_videos <- paste0('[YouTube](',anova_post_videos_link,')')
+
+anova_post <- data.frame(
+  'Lecture' = anova_post_lectures,
+  'File' = anova_post_pdf,
+  'Video' = anova_post_videos)
+
+anova_post$Lecture <- cell_spec(anova_post$Lecture, popover = spec_popover(
+  content = anova_post_desc,
+  title = 'General Overview',
+  position = 'top'
+))
+
+kbl(x = anova_post, escape=F, align='lcc', col.names = c('Lecture Topic','Slides','Video Link')) %>%
+  column_spec(1, width='18em') %>%
+  column_spec(2, width='5em') %>%
+  column_spec(3, width='5em') %>%
+  kable_styling(bootstrap_options = c("striped")) 
+```
+
+
+### Special Topics
+
+
+```{r, echo=F}
+reg_topics_lectures <- c('General Linear Hypothesis Testing',
+  'Confounders and Precision Variables',
+  'Mediation Models',
+  'Polynomial Regression',
+  'Interaction/Effect Modification',
+  'Model Selection Procedures',
+  'Variable Selection Considerations',
+  'Diagnostics for Outliers and Influential Points',
+  'Supplemental Material on Contrasts'
+)
+
+reg_topics_desc <- c('An approach to evaluating either multiple hypotheses simultaneously or to more easily test combinations of covariates.',
+                     'Variables may serve many roles, including being a confounder affecting both the primary explanatory variable of interest (X) and our outcome (Y) or a precision variable (affecting the variance of our beta coefficient for X).',
+                     'One of the most basic causal frameworks to evaluate mediators is introduced that uses the multiple linear regression models we have been covering.',
+                     'Exploration of models with polynomial terms (e.g., X and X^2) and how to conduct statistical inference. If we have repeated measures or replicates within a given variable, we can also estimate the pure error as a separate summary from our lack of fit error due to the regression model.',
+                     'When we include an interaction term in our model between two of our covariates (e.g., X1 * X2) there is greater flexibility to model the relationship between our predictors and outcome. However, it comes with an increased complexity in the interpretation of coefficients and inference, which we work through in this lecture.',
+                     'Various approaches to selection the "best" or "optimal" model are presented including the coefficient of determination, F-tests, model selection criterion (AIC, BIC), and Mallows\' Cp. All subsets regression is illustrated across these various measures.',
+                     'Selecting a subset of variables is challenge. Different strategies, including automatic procedures that should be used with caution, are described.',
+                     'Identifying if an observation is an outlier, influential point, or leverage point may help determine how to address it and what is may be doing to the coefficients in our regression model.',
+                     'We used to talk a lot more about contrasts, but lots of it is now behind the scenes or has other approaches we have used. In this supplement you can learn more about the wild, zany world of contrasts.'
+)
+
+reg_topics_pdf_link <- paste0('./files/bios6611/',
+                             c('W12/GLH.pdf',
+                               'W12/confounding_precision.pdf',
+                               'W12/mediation.pdf',
+                               'W12/polynomial_regression.pdf',
+                               'W12/effect_modification.pdf',
+                               'W14/model_selection.pdf',
+                               'W14/variable_selection.pdf',
+                               'W14/Outliers_InfluentialPoints.pdf',
+                               'W12/Supplemental_Contrasts.pdf'))
+reg_topics_pdf <- paste0('[PDF](',reg_topics_pdf_link,')')
+
+reg_topics_videos_link <-c('https://youtu.be/Zz6UhL6EXJM',
+  'https://youtu.be/gIafO8EbZKk',
+  'https://youtu.be/MLy5WQfRYuY',
+  'https://youtu.be/HFfbVm3eqL8',
+  'https://youtu.be/3qV8l8_GWWA',
+  'https://youtu.be/GbSSo1iQ-Zs',
+  'https://youtu.be/9JdyQd6DE4E',
+  'https://youtu.be/3XUo2b38e6E'
+  )
+reg_topics_videos <- c(paste0('[YouTube](',reg_topics_videos_link,')'), 
+                       rep('--',1))
+
+reg_topics <- data.frame(
+  'Lecture' = reg_topics_lectures,
+  'File' = reg_topics_pdf,
+  'Video' = reg_topics_videos)
+
+reg_topics$Lecture <- cell_spec(reg_topics$Lecture, popover = spec_popover(
+  content = reg_topics_desc,
+  title = 'General Overview',
+  position = 'top'
+))
+
+kbl(x = reg_topics, escape=F, align='lcc', col.names = c('Lecture Topic','Slides','Video Link')) %>%
+  column_spec(1, width='18em') %>%
+  column_spec(2, width='5em') %>%
+  column_spec(3, width='5em') %>%
+  kable_styling(bootstrap_options = c("striped")) 
+```
+
+
+### Matrix Approaches to Regression
+
+```{r, echo=F}
+mat_reg_lectures <- c('Linear Regression in Matrix Format',
+  'Linear Regression with Matrices in SAS',
+  'Linear Regression with Matrices in R',
+  'MLE and Regression',
+  'Exponential Families and Generalized Linear Models'
+)
+
+mat_reg_desc <- c('Our prior lectures have focused on an algebraic approach to regression. In this lecture we derive the matrix approach and provide the corresponding equations with matrix notation.',
+                  'An example of coding matrices in SAS for linear regression.',
+                  'An example of coding matrices in R for linear regression.',
+                  'In addition to the ordinary least squares estimators, we can also derive our regression coefficients with maximum likelihood estimation which is included in this lecture.',
+                  'To prepare for BIOS 6612, the topic of exponential families and generalized linear models, of which linear regression is a subsest of, is introduced.'
+)
+
+mat_reg_pdf_link <- paste0('./files/bios6611/',
+                             c('W15/linear_regression_with_matrices.pdf',
+                               'W15/matrices_in_sas.sas',
+                               'W15/matrices_in_R.html',
+                               'W15/alternative_estimation_approaches.pdf',
+                               'W15/generalized_linear_models.pdf'))
+mat_reg_pdf <- c(paste0('[PDF](',mat_reg_pdf_link[1],')'),
+                 paste0('[SAS](',mat_reg_pdf_link[2],')'),
+                 paste0('[HTML](',mat_reg_pdf_link[3],')'),
+                 paste0('[PDF](',mat_reg_pdf_link[4],')'),
+                 paste0('[PDF](',mat_reg_pdf_link[5],')'))
+
+mat_reg_videos_link <-c('https://youtu.be/twA_9-o1J44',
+  'https://youtu.be/Dz1n1zCECd4',
+  'https://youtu.be/FFX9WyxEa7o',
+  'https://youtu.be/uPmBobwXaTE'
+  )
+mat_reg_videos <- c(paste0('[YouTube](',mat_reg_videos_link,')'), '--') #need to add video once done
+
+mat_reg <- data.frame(
+  'Lecture' = mat_reg_lectures,
+  'File' = mat_reg_pdf,
+  'Video' = mat_reg_videos)
+
+mat_reg$Lecture <- cell_spec(mat_reg$Lecture, popover = spec_popover(
+  content = mat_reg_desc,
+  title = 'General Overview',
+  position = 'top'
+))
+
+kbl(x = mat_reg, escape=F, align='lcc', col.names = c('Lecture Topic','Slides','Video Link')) %>%
+  column_spec(1, width='18em') %>%
+  column_spec(2, width='5em') %>%
+  column_spec(3, width='5em') %>%
+  kable_styling(bootstrap_options = c("striped")) 
+```
