@@ -14,7 +14,7 @@ output:
 
 ## Page Limits
 
-s
+
 # Preparation
 
 ## Article Structure
