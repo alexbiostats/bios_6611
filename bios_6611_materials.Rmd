@@ -561,9 +561,10 @@ mat_reg_pdf <- c(paste0('[PDF](',mat_reg_pdf_link[1],')'),
 mat_reg_videos_link <-c('https://youtu.be/twA_9-o1J44',
   'https://youtu.be/Dz1n1zCECd4',
   'https://youtu.be/FFX9WyxEa7o',
-  'https://youtu.be/uPmBobwXaTE'
+  'https://youtu.be/uPmBobwXaTE',
+  'https://youtu.be/IClVegLqRKc'
   )
-mat_reg_videos <- c(paste0('[YouTube](',mat_reg_videos_link,')'), '--') #need to add video once done
+mat_reg_videos <- paste0('[YouTube](',mat_reg_videos_link,')')
 
 mat_reg <- data.frame(
   'Lecture' = mat_reg_lectures,
