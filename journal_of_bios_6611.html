@@ -11,7 +11,7 @@
 
 
 
-<title>Journal of BIOS 6611</title>
+<title>Journal of BIOS 6611 Guide for Authors</title>
 
 <script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
@@ -419,47 +419,92 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Journal of BIOS 6611</h1>
+<h1 class="title toc-ignore">Journal of BIOS 6611 Guide for Authors</h1>
 
 </div>
 
 
-<p><em>Page in progress.</em></p>
 <div id="introduction" class="section level1">
 <h1>Introduction</h1>
+<p>The <em>Journal of BIOS 6611</em> is the official internal publication of the Biostatistical Methods I course at the University of Colorado Anschutz Medical Campus. Each year (volume) of the journal encompasses two distinct issues: one focusing on simulation studies and another on applied data analysis. Specific details as to project deadlines, rubrics, and more can be found for current students on the Canvas course page. The details below are meant to mimic those of real journal websites for submission to provide practice for future submissions.</p>
 <div id="types-of-articles" class="section level2">
 <h2>Types of Articles</h2>
-</div>
-<div id="page-limits" class="section level2">
-<h2>Page Limits</h2>
+<p>Two types of articles are accepted:</p>
+<ul>
+<li><p><strong>Simulation studies:</strong> these articles focus on the use of simulation studies to explore research questions that do not involve “real” data. Articles may include exploration of theorems discussed in class, evaluation of test properties under various assumptions, illustration of power calculations for unique problems, or other applications where simulation studies may be of interest.</p></li>
+<li><p><strong>Brief reports:</strong> these articles are short analyses to answer a research question from real world data. Articles must include at least one use of resampling (either <em>bootstrap resampling</em> to describe the variability of parameters of interest or <em>permutation testing</em> to calculate a p-value).</p></li>
+</ul>
 </div>
 </div>
 <div id="preparation" class="section level1">
 <h1>Preparation</h1>
-<div id="article-structure" class="section level2">
-<h2>Article Structure</h2>
+<div id="file-formats" class="section level2">
+<h2>File Formats</h2>
+<p>Articles should be submitted in a format compatible with <a href="https://community.canvaslms.com/t5/Instructor-Guide/What-types-of-files-can-be-previewed-in-Canvas/ta-p/607">Canvas SpeedGrader</a> (e.g., DOCX or PDF).</p>
+<p>Preferably, articles will be written using R Markdown. All files will ultimately be converted to PDF for inclusion in the journal issue disseminated internally within the class.</p>
 </div>
-<div id="appendices" class="section level2">
-<h2>Appendices</h2>
+<div id="page-limits" class="section level2">
+<h2>Page Limits</h2>
+<p><strong>Simulation studies</strong> have an expected page length of approximately two pages.</p>
+<p><strong>Brief reports</strong> have an expected page length of approximately three pages.</p>
+<p>These pages limits include figures and tables, but not references.</p>
 </div>
-<div id="abstract" class="section level2">
-<h2>Abstract</h2>
+<div id="font-size-and-spacing" class="section level2">
+<h2>Font Size and Spacing</h2>
+<p>Use a standard font size and any standard font. Articles should be single spaced.</p>
 </div>
-<div id="keywords" class="section level2">
-<h2>Keywords</h2>
+<div id="title-and-author-information" class="section level2">
+<h2>Title and Author Information</h2>
+<p>The article should have an informative title. Additionally, author information should include:</p>
+<ul>
+<li>Author name</li>
+<li>Author degrees</li>
+<li>Author affiliation (e.g., BIOS MS Student, EPID MPH Student, Baisy’s Lab, etc.)</li>
+</ul>
+</div>
+<div id="abstract-and-keywords" class="section level2">
+<h2>Abstract and Keywords</h2>
+<p>A short abstract should describe the problem, data, and results.</p>
+<p>Immediately after the abstract, provide a maximum of 5 keywords, avoiding general and plural terms and multiple concepts (avoid, for example, ‘and’, ‘of’). These keywords will be used for indexing purposes.</p>
+</div>
+<div id="article-body-structure" class="section level2">
+<h2>Article Body Structure</h2>
+<p>Articles should follow a similar structure to that outlined below:</p>
+<ul>
+<li>Introduction, Background</li>
+<li>Motivating Problem, Theorem Description (for simulation studies); Materials and Methods, Study Design (for brief reports)</li>
+<li>Simulation Set-up, Statistical Methods, Statistical Analyses</li>
+<li>Results</li>
+<li>Discussion, Conclusion</li>
+</ul>
+<p>Note, these exact names do not need to be used and can be customized to your given article, analysis, and context.</p>
 </div>
 <div id="tables-and-figures" class="section level2">
 <h2>Tables and Figures</h2>
+<p>All tables and figures should be “publication ready” with informative titles and labels. Where applicable, units of measurement should be included. Variable names from code should be replaced with meaningful labels (e.g., instead of “outcome_variable4” write the actual outcome).</p>
+<p><strong>Brief reports</strong> must include a “Table 1” that describes the study population. Additional tables may be included as necessary to present and summarize results.</p>
+<p><strong>Brief reports</strong> and <strong>simulation studies</strong> must both include <em>at least one</em> figure to describe the data and/or results. Additional figures are welcomed to describe the data and/or results where appropriate.</p>
+</div>
+<div id="decimal-numerals" class="section level2">
+<h2>Decimal Numerals</h2>
+<p>To enhance readability and clarity of the text as well as tables and figures, decimal numerals should - with the obvious exception of P-values - be rounded to the unit whenever possible (i.e. in all cases in which the rounding procedure does not change the meaning).</p>
+</div>
+<div id="acknowledgments" class="section level2">
+<h2>Acknowledgments</h2>
+<p>Collate acknowledgements in a separate section at the end of the article before the references and do not, therefore, include them on the title page, as a footnote to the title or otherwise. List here those individuals who provided help during the research (e.g., providing language help, writing assistance or proof reading the article, etc.).</p>
 </div>
 <div id="references" class="section level2">
 <h2>References</h2>
+<p>Any style of reference is acceptable as long as formatting is consistent.</p>
 </div>
-<div id="supplementary-material" class="section level2">
-<h2>Supplementary Material</h2>
+<div id="supplemental-materials" class="section level2">
+<h2>Supplemental Materials</h2>
+<p>Given the small page limits, it is acceptable to include additional tables and figures in a Supplemental Materials section if needed. These figures and tables should be referenced in the text as <strong>Figure S1</strong>, <strong>Table S1</strong>, etc.</p>
 </div>
+<div id="reproducible-research-principles" class="section level2">
+<h2>Reproducible Research Principles</h2>
+<p>An <em>appendix</em> with R, SAS, or other code should be included starting on a new page after your references with code that is clearly commented for the simulations, analyses, figures, and tables ultimately included in the report. Code that was ultimately not used in the final report should be excluded from this appendix.</p>
 </div>
-<div id="article-submission" class="section level1">
-<h1>Article submission</h1>
 </div>
 
 

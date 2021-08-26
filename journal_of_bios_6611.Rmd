@@ -1,39 +1,96 @@
 ---
-title: "Journal of BIOS 6611"
+title: "Journal of BIOS 6611 Guide for Authors"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
 
-*Page in progress.*
-
 # Introduction
+The *Journal of BIOS 6611* is the official internal publication of the Biostatistical Methods I course at the University of Colorado Anschutz Medical Campus. Each year (volume) of the journal encompasses two distinct issues: one focusing on simulation studies and another on applied data analysis. Specific details as to project deadlines, rubrics, and more can be found for current students on the Canvas course page. The details below are meant to mimic those of real journal websites for submission to provide practice for future submissions.
 
 ## Types of Articles
+Two types of articles are accepted:
 
-## Page Limits
+* **Simulation studies:** these articles focus on the use of simulation studies to explore research questions that do not involve "real" data. Articles may include exploration of theorems discussed in class, evaluation of test properties under various assumptions, illustration of power calculations for unique problems, or other applications where simulation studies may be of interest.
+
+*  **Brief reports:** these articles are short analyses to answer a research question from real world data. Articles must include at least one use of resampling (either *bootstrap resampling* to describe the variability of parameters of interest or *permutation testing* to calculate a p-value).
 
 
 # Preparation
 
-## Article Structure
+## File Formats
+Articles should be submitted in a format compatible with [Canvas SpeedGrader](https://community.canvaslms.com/t5/Instructor-Guide/What-types-of-files-can-be-previewed-in-Canvas/ta-p/607) (e.g., DOCX or PDF). 
 
-## Appendices
+Preferably, articles will be written using R Markdown. All files will ultimately be converted to PDF for inclusion in the journal issue disseminated internally within the class. 
 
-## Abstract
 
-## Keywords
+## Page Limits
+**Simulation studies** have an expected page length of approximately two pages. 
+
+**Brief reports** have an expected page length of approximately three pages. 
+
+These pages limits include figures and tables, but not references. 
+
+
+## Font Size and Spacing
+Use a standard font size and any standard font. Articles should be single spaced.
+
+
+## Title and Author Information
+The article should have an informative title. Additionally, author information should include:
+
+* Author name
+* Author degrees
+* Author affiliation (e.g., BIOS MS Student, EPID MPH Student, Baisy's Lab, etc.)
+
+
+## Abstract and Keywords
+A short abstract should describe the problem, data, and results.
+
+Immediately after the abstract, provide a maximum of 5 keywords, avoiding general and plural terms and multiple concepts (avoid, for example, 'and', 'of'). These keywords will be used for indexing purposes.
+
+
+## Article Body Structure
+Articles should follow a similar structure to that outlined below:
+
+* Introduction, Background
+* Motivating Problem, Theorem Description (for simulation studies); Materials and Methods, Study Design (for brief reports)
+* Simulation Set-up, Statistical Methods, Statistical Analyses
+* Results
+* Discussion, Conclusion
+
+Note, these exact names do not need to be used and can be customized to your given article, analysis, and context.
+
 
 ## Tables and Figures
+All tables and figures should be "publication ready" with informative titles and labels. Where applicable, units of measurement should be included. Variable names from code should be replaced with meaningful labels (e.g., instead of "outcome_variable4" write the actual outcome). 
+
+**Brief reports** must include a "Table 1" that describes the study population. Additional tables may be included as necessary to present and summarize results.
+
+**Brief reports** and **simulation studies** must both include *at least one* figure to describe the data and/or results. Additional figures are welcomed to describe the data and/or results where appropriate.
+
+
+## Decimal Numerals
+To enhance readability and clarity of the text as well as tables and figures, decimal numerals should - with the obvious exception of P-values - be rounded to the unit whenever possible (i.e. in all cases in which the rounding procedure does not change the meaning). 
+
+
+## Acknowledgments
+Collate acknowledgements in a separate section at the end of the article before the references and do not, therefore, include them on the title page, as a footnote to the title or otherwise. List here those individuals who provided help during the research (e.g., providing language help, writing assistance or proof reading the article, etc.).
+
 
 ## References
-
-## Supplementary Material
-
+Any style of reference is acceptable as long as formatting is consistent.
 
 
-# Article submission
+## Supplemental Materials
+Given the small page limits, it is acceptable to include additional tables and figures in a Supplemental Materials section if needed. These figures and tables should be referenced in the text as **Figure S1**, **Table S1**, etc. 
+
+
+## Reproducible Research Principles
+An *appendix* with R, SAS, or other code should be included starting on a new page after your references with code that is clearly commented for the simulations, analyses, figures, and tables ultimately included in the report. Code that was ultimately not used in the final report should be excluded from this appendix.
+
+
 
 
 
