@@ -138,7 +138,7 @@ hyp_test_pdf <- paste0('[PDF](',hyp_test_pdf_link,')')
 hyp_test_videos_link <-c('https://youtu.be/a5UIRGaB4bk',
   'https://youtu.be/4boPRRKl0GY',
   'https://youtu.be/s-L5SKskBv8',
-  'https://youtu.be/JVvHAJkm-pk',
+  'https://youtu.be/mhlIQ-S_PxQ',
   'https://youtu.be/HNQzFZWpIpY'
   )
 hyp_test_videos <- paste0('[YouTube](',hyp_test_videos_link,')')
