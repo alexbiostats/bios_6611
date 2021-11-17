@@ -86,7 +86,7 @@ Any style of reference is acceptable as long as formatting is consistent.
 ## Supplemental Materials
 Given the small page limits, it is acceptable to include *additional* tables and figures beyond the required minimum of one table and one figure in a Supplemental Materials section if needed. These figures and tables should be referenced in the text as **Figure S1**, **Table S1**, etc. 
 
-While you should direct the reader to the Supplemental Materials for further information, figures, tables, results, etc., your paper should be able to largely stand on its own without relying entirely on a supplement.
+While you should direct the reader to the Supplemental Materials to access the additional tables, figures, or information, the paper itself should be able to be largely understood as though a reader did not have access to the supplement.
 
 
 ## Reproducible Research Principles
