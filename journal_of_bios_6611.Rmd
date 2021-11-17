@@ -26,11 +26,11 @@ Preferably, articles will be written using R Markdown. All files will ultimately
 
 
 ## Page Limits
-**Simulation studies** have an expected page length of approximately two pages. 
+**Simulation studies** have an expected page length of at least 1.5 pages and no more than 2 pages. 
 
-**Brief reports** have an expected page length of approximately three pages. 
+**Brief reports** have an expected page length of at least 2.5 pages and no more than 3 pages. 
 
-These pages limits include figures and tables, but not references. 
+These pages limits include the required figure(s) and table(s), but not references. 
 
 
 ## Font Size and Spacing
@@ -66,9 +66,9 @@ Note, these exact names do not need to be used and can be customized to your giv
 ## Tables and Figures
 All tables and figures should be "publication ready" with informative titles and labels. Where applicable, units of measurement should be included. Variable names from code should be replaced with meaningful labels (e.g., instead of "outcome_variable4" write the actual outcome). 
 
-**Brief reports** must include a "Table 1" that describes the study population. Additional tables may be included as necessary to present and summarize results.
+**Simulation studies** must include at least one table and one figure, but more may be included. These count towards the two page limit.
 
-**Brief reports** and **simulation studies** must both include *at least one* figure to describe the data and/or results. Additional figures are welcomed to describe the data and/or results where appropriate.
+**Brief reports** must include a "Table 1" that describes the study population as well as at least one figure. Additional tables and figures may be included as necessary to present and summarize results. These count towards the three page limit.
 
 
 ## Decimal Numerals
@@ -84,7 +84,9 @@ Any style of reference is acceptable as long as formatting is consistent.
 
 
 ## Supplemental Materials
-Given the small page limits, it is acceptable to include additional tables and figures in a Supplemental Materials section if needed. These figures and tables should be referenced in the text as **Figure S1**, **Table S1**, etc. 
+Given the small page limits, it is acceptable to include *additional* tables and figures beyond the required minimum of one table and one figure in a Supplemental Materials section if needed. These figures and tables should be referenced in the text as **Figure S1**, **Table S1**, etc. 
+
+While you should direct the reader to the Supplemental Materials for further information, figures, tables, results, etc., your paper should be able to largely stand on its own without relying entirely on a supplement.
 
 
 ## Reproducible Research Principles
