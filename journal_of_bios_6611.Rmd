@@ -6,6 +6,7 @@ output:
     toc_float: true
     includes:
       in_header:
+        - header.html
         - header-tracker.html
 ---
 
