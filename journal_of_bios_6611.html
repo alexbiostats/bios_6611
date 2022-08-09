@@ -13,8 +13,8 @@
 
 <title>Journal of BIOS 6611 Guide for Authors</title>
 
-<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -37,15 +37,14 @@
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
-<link href="site_libs/academicons-1.9.1/css/academicons.css" rel="stylesheet" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5PBG7BL207"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-<link rel="icon" type="image/png" href="./files/favicon.ico"/>
-
-<script type="text/javascript">
-function setBrand() {
-document.getElementsByClassName("navbar-brand")[0].href="https://www.alexkaizer.com";
-}
-window.onload = setBrand;
+  gtag('config', 'G-5PBG7BL207');
 </script>
 
 <style type="text/css">
@@ -67,6 +66,7 @@ if (window.hljs) {
   }
 }
 </script>
+
 
 
 
@@ -96,6 +96,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -321,7 +324,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -337,7 +340,7 @@ div.tocify {
   <a href="https://www.alexkaizer.com/publications.html">Publications</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Teaching
      
     <span class="caret"></span>
@@ -355,7 +358,7 @@ div.tocify {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     BIOS 6611
      
     <span class="caret"></span>
@@ -426,13 +429,30 @@ div.tocify {
 
 <div id="introduction" class="section level1">
 <h1>Introduction</h1>
-<p>The <em>Journal of BIOS 6611</em> is the official internal publication of the Biostatistical Methods I course at the University of Colorado Anschutz Medical Campus. Each year (volume) of the journal encompasses two distinct issues: one focusing on simulation studies and another on applied data analysis. Specific details as to project deadlines, rubrics, and more can be found for current students on the Canvas course page. The details below are meant to mimic those of real journal websites for submission to provide practice for future submissions.</p>
+<p>The <em>Journal of BIOS 6611</em> is the official internal
+publication of the Biostatistical Methods I course at the University of
+Colorado Anschutz Medical Campus. Each year (volume) of the journal
+encompasses two distinct issues: one focusing on simulation studies and
+another on applied data analysis. Specific details as to project
+deadlines, rubrics, and more can be found for current students on the
+Canvas course page. The details below are meant to mimic those of real
+journal websites for submission to provide practice for future
+submissions.</p>
 <div id="types-of-articles" class="section level2">
 <h2>Types of Articles</h2>
 <p>Two types of articles are accepted:</p>
 <ul>
-<li><p><strong>Simulation studies:</strong> these articles focus on the use of simulation studies to explore research questions that do not involve “real” data. Articles may include exploration of theorems discussed in class, evaluation of test properties under various assumptions, illustration of power calculations for unique problems, or other applications where simulation studies may be of interest.</p></li>
-<li><p><strong>Brief reports:</strong> these articles are short analyses to answer a research question from real world data. Articles must include at least one use of resampling (either <em>bootstrap resampling</em> to describe the variability of parameters of interest or <em>permutation testing</em> to calculate a p-value).</p></li>
+<li><p><strong>Simulation studies:</strong> these articles focus on the
+use of simulation studies to explore research questions that do not
+involve “real” data. Articles may include exploration of theorems
+discussed in class, evaluation of test properties under various
+assumptions, illustration of power calculations for unique problems, or
+other applications where simulation studies may be of interest.</p></li>
+<li><p><strong>Brief reports:</strong> these articles are short analyses
+to answer a research question from real world data. Articles must
+include at least one use of resampling (either <em>bootstrap
+resampling</em> to describe the variability of parameters of interest or
+<em>permutation testing</em> to calculate a p-value).</p></li>
 </ul>
 </div>
 </div>
@@ -440,71 +460,116 @@ div.tocify {
 <h1>Preparation</h1>
 <div id="file-formats" class="section level2">
 <h2>File Formats</h2>
-<p>Articles should be submitted in a format compatible with <a href="https://community.canvaslms.com/t5/Instructor-Guide/What-types-of-files-can-be-previewed-in-Canvas/ta-p/607">Canvas SpeedGrader</a> (e.g., DOCX or PDF).</p>
-<p>Preferably, articles will be written using R Markdown. All files will ultimately be converted to PDF for inclusion in the journal issue disseminated internally within the class.</p>
+<p>Articles should be submitted in a format compatible with <a
+href="https://community.canvaslms.com/t5/Instructor-Guide/What-types-of-files-can-be-previewed-in-Canvas/ta-p/607">Canvas
+SpeedGrader</a> (e.g., DOCX or PDF).</p>
+<p>Preferably, articles will be written using R Markdown. All files will
+ultimately be converted to PDF for inclusion in the journal issue
+disseminated internally within the class.</p>
 </div>
 <div id="page-limits" class="section level2">
 <h2>Page Limits</h2>
-<p><strong>Simulation studies</strong> have an expected page length of at least 1.5 pages and no more than 2 pages.</p>
-<p><strong>Brief reports</strong> have an expected page length of at least 2.5 pages and no more than 3 pages.</p>
-<p>These pages limits include the required figure(s) and table(s), but not references.</p>
+<p><strong>Simulation studies</strong> have an expected page length of
+at least 1.5 pages and no more than 2 pages.</p>
+<p><strong>Brief reports</strong> have an expected page length of at
+least 2.5 pages and no more than 3 pages.</p>
+<p>These pages limits include the required figure(s) and table(s), but
+not references.</p>
 </div>
 <div id="font-size-and-spacing" class="section level2">
 <h2>Font Size and Spacing</h2>
-<p>Use a standard font size and any standard font. Articles should be single spaced.</p>
+<p>Use a standard font size and any standard font. Articles should be
+single spaced.</p>
 </div>
 <div id="title-and-author-information" class="section level2">
 <h2>Title and Author Information</h2>
-<p>The article should have an informative title. Additionally, author information should include:</p>
+<p>The article should have an informative title. Additionally, author
+information should include:</p>
 <ul>
 <li>Author name</li>
 <li>Author degrees</li>
-<li>Author affiliation (e.g., BIOS MS Student, EPID MPH Student, Baisy’s Lab, etc.)</li>
+<li>Author affiliation (e.g., BIOS MS Student, EPID MPH Student, Baisy’s
+Lab, etc.)</li>
 </ul>
 </div>
 <div id="abstract-and-keywords" class="section level2">
 <h2>Abstract and Keywords</h2>
 <p>A short abstract should describe the problem, data, and results.</p>
-<p>Immediately after the abstract, provide a maximum of 5 keywords, avoiding general and plural terms and multiple concepts (avoid, for example, ‘and’, ‘of’). These keywords will be used for indexing purposes.</p>
+<p>Immediately after the abstract, provide a maximum of 5 keywords,
+avoiding general and plural terms and multiple concepts (avoid, for
+example, ‘and’, ‘of’). These keywords will be used for indexing
+purposes.</p>
 </div>
 <div id="article-body-structure" class="section level2">
 <h2>Article Body Structure</h2>
-<p>Articles should follow a similar structure to that outlined below:</p>
+<p>Articles should follow a similar structure to that outlined
+below:</p>
 <ul>
 <li>Introduction, Background</li>
-<li>Motivating Problem, Theorem Description (for simulation studies); Materials and Methods, Study Design (for brief reports)</li>
+<li>Motivating Problem, Theorem Description (for simulation studies);
+Materials and Methods, Study Design (for brief reports)</li>
 <li>Simulation Set-up, Statistical Methods, Statistical Analyses</li>
 <li>Results</li>
 <li>Discussion, Conclusion</li>
 </ul>
-<p>Note, these exact names do not need to be used and can be customized to your given article, analysis, and context.</p>
+<p>Note, these exact names do not need to be used and can be customized
+to your given article, analysis, and context.</p>
 </div>
 <div id="tables-and-figures" class="section level2">
 <h2>Tables and Figures</h2>
-<p>All tables and figures should be “publication ready” with informative titles and labels. Where applicable, units of measurement should be included. Variable names from code should be replaced with meaningful labels (e.g., instead of “outcome_variable4” write the actual outcome).</p>
-<p><strong>Simulation studies</strong> must include at least one table and one figure, but more may be included. These count towards the two page limit.</p>
-<p><strong>Brief reports</strong> must include a “Table 1” that describes the study population as well as at least one figure. Additional tables and figures may be included as necessary to present and summarize results. These count towards the three page limit.</p>
+<p>All tables and figures should be “publication ready” with informative
+titles and labels. Where applicable, units of measurement should be
+included. Variable names from code should be replaced with meaningful
+labels (e.g., instead of “outcome_variable4” write the actual
+outcome).</p>
+<p><strong>Simulation studies</strong> must include at least one table
+and one figure, but more may be included. These count towards the two
+page limit.</p>
+<p><strong>Brief reports</strong> must include a “Table 1” that
+describes the study population as well as at least one figure.
+Additional tables and figures may be included as necessary to present
+and summarize results. These count towards the three page limit.</p>
 </div>
 <div id="decimal-numerals" class="section level2">
 <h2>Decimal Numerals</h2>
-<p>To enhance readability and clarity of the text as well as tables and figures, decimal numerals should - with the obvious exception of P-values - be rounded to the unit whenever possible (i.e. in all cases in which the rounding procedure does not change the meaning).</p>
+<p>To enhance readability and clarity of the text as well as tables and
+figures, decimal numerals should - with the obvious exception of
+P-values - be rounded to the unit whenever possible (i.e. in all cases
+in which the rounding procedure does not change the meaning).</p>
 </div>
 <div id="acknowledgments" class="section level2">
 <h2>Acknowledgments</h2>
-<p>Collate acknowledgements in a separate section at the end of the article before the references and do not, therefore, include them on the title page, as a footnote to the title or otherwise. List here those individuals who provided help during the research (e.g., providing language help, writing assistance or proof reading the article, etc.).</p>
+<p>Collate acknowledgements in a separate section at the end of the
+article before the references and do not, therefore, include them on the
+title page, as a footnote to the title or otherwise. List here those
+individuals who provided help during the research (e.g., providing
+language help, writing assistance or proof reading the article,
+etc.).</p>
 </div>
 <div id="references" class="section level2">
 <h2>References</h2>
-<p>Any style of reference is acceptable as long as formatting is consistent.</p>
+<p>Any style of reference is acceptable as long as formatting is
+consistent.</p>
 </div>
 <div id="supplemental-materials" class="section level2">
 <h2>Supplemental Materials</h2>
-<p>Given the small page limits, it is acceptable to include <em>additional</em> tables and figures beyond the required minimum of one table and one figure in a Supplemental Materials section if needed. These figures and tables should be referenced in the text as <strong>Figure S1</strong>, <strong>Table S1</strong>, etc.</p>
-<p>While you should direct the reader to the Supplemental Materials to access the additional tables, figures, or information, the paper itself should be able to be largely understood as though a reader did not have access to the supplement.</p>
+<p>Given the small page limits, it is acceptable to include
+<em>additional</em> tables and figures beyond the required minimum of
+one table and one figure in a Supplemental Materials section if needed.
+These figures and tables should be referenced in the text as
+<strong>Figure S1</strong>, <strong>Table S1</strong>, etc.</p>
+<p>While you should direct the reader to the Supplemental Materials to
+access the additional tables, figures, or information, the paper itself
+should be able to be largely understood as though a reader did not have
+access to the supplement.</p>
 </div>
 <div id="reproducible-research-principles" class="section level2">
 <h2>Reproducible Research Principles</h2>
-<p>An <em>appendix</em> with R, SAS, or other code should be included starting on a new page after your references with code that is clearly commented for the simulations, analyses, figures, and tables ultimately included in the report. Code that was ultimately not used in the final report should be excluded from this appendix.</p>
+<p>An <em>appendix</em> with R, SAS, or other code should be included
+starting on a new page after your references with code that is clearly
+commented for the simulations, analyses, figures, and tables ultimately
+included in the report. Code that was ultimately not used in the final
+report should be excluded from this appendix.</p>
 </div>
 </div>
 

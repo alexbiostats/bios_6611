@@ -6,6 +6,7 @@ output:
       in_header: 
         - header.html
         - hero-image.html
+        - header-tracker.html
 ---
 
 ### Description
