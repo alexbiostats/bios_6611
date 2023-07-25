@@ -16,12 +16,12 @@ $(document).ready(function(){
 });
 </script>
 
-```{r, echo=F, message=F}
+```{r, echo=F, message=F, warning=F}
 library(kableExtra)
 library(dplyr)
 ```
 
-This page includes the asynchronous lecture videos, PDF slides, and other materials for Biostatistical Methods I (BIOS 6611). The material is broadly broken down by theme with links provided to download materials or view the videos. **A brief overview of the material covered in a given lecture can be viewed by hovering over or clicking the given "Lecture Topic".**
+This page includes the asynchronous lecture videos, PDF slides, and other materials for Biostatistical Methods I (BIOS 6611) *for Fall 2020/2021/2022*. Note that later semesters may use different materials and cover different topics. The material is broadly broken down by theme with links provided to download materials or view the videos. **A brief overview of the material covered in a given lecture can be viewed by hovering over or clicking the given "Lecture Topic".**
 
 
 ## Probability and Distributions

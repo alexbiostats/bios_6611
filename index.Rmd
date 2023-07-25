@@ -9,6 +9,8 @@ output:
         - header-tracker.html
 ---
 
+***This course website is for Fall 2020/2021/2022. Note that later semesters may use different materials and cover different topics.***
+
 ### Description
 
 Biostatistical Methods I (BIOS 6611) is the first of a two-semester applied statistics sequence designed to equip students with a practical knowledge of the quantitative methods most frequently used in medical research. This course is an introduction to applied biostatistics, including probability models, simulation, sampling distributions, hypothesis testing, resampling methods, linear regression and the use of the R and SAS statistical packages. Concepts will be illustrated using examples in the fields of medicine, biology, epidemiology and public health. Written and graphical presentation and interpretation of methods and results will be emphasized.
