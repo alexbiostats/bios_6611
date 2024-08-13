@@ -4,6 +4,7 @@ project:
 
 website:
   title: "Alex Kaizer"
+  site-path: "/bios_6611/"
   search: true
   navbar:
     pinned: true
