@@ -37,12 +37,10 @@ website:
         href: mailto:alex.kaizer@cuanschutz.edu
       - text: "{{< ai google-scholar size=large >}}" # TERMINAL PROMPT: quarto install extension schochastics/academicons
         href: https://scholar.google.com/citations?user=ICpH74EAAAAJ&hl=en
-      - text: "{{< ai cv size=large >}}" # TERMINAL PROMPT: quarto install extension schochastics/academicons
-        href: https://www.alexkaizer.com/files/Alex_CV.pdf
       - icon: github
         href: http://github.com/alexbiostats
-      - icon: twitter
-        href: https://twitter.com/AlexBiostats
+      - text: "{{< ai cv size=large >}}" # TERMINAL PROMPT: quarto install extension schochastics/academicons
+        href: https://www.alexkaizer.com/files/Alex_CV.pdf
       - icon: linkedin
         href: https://www.linkedin.com/in/alex-kaizer/
 
