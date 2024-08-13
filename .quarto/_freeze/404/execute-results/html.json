@@ -1,7 +1,7 @@
 {
-  "hash": "523f5f9f430885da4e1844c2988e8dfd",
+  "hash": "0426f333533b4dfcbee4a7bb55561535",
   "result": {
-    "markdown": "---\ntitle: \"Page Not Found\"\noutput: \n  html_document:\n    includes:\n      in_header: \n        - header.html\n        - header-tracker.html\n---\n\n\nBaisy the Bayesian pupper thinks you may have specified a bad prior. Try specifying a new prior.\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](./files/baisy_404.jpg){fig-align='center' width=50%}\n:::\n:::\n",
+    "markdown": "---\ntitle: \"Page Not Found\"\ntoc: FALSE\nformat:\n  html\n---\n\n\nBaisy the Bayesian pupper thinks you may have specified a bad prior. Try specifying a new prior.\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](./files/baisy_404.jpg){fig-align='center' width=50%}\n:::\n:::\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"

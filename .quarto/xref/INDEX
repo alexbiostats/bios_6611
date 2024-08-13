@@ -1,20 +1,17 @@
 {
   "404.qmd": {
-    "404.html": "701c4d62"
-  },
-  "bios_6611_materials.qmd": {
-    "bios_6611_materials.html": "a4136bfb"
-  },
-  "index.qmd": {
-    "index.html": "3aca6dda"
-  },
-  "journal_of_bios_6611.qmd": {
-    "journal_of_bios_6611.html": "a0ea7e10"
+    "404.html": "b839a424"
   },
   "bios_6611_materials/index.qmd": {
-    "index.html": "fec5f55f"
+    "index.html": "5d1f5eb3"
+  },
+  "files/index.qmd": {
+    "index.html": "cc1ddea9"
+  },
+  "index.qmd": {
+    "index.html": "c51df1a7"
   },
   "journal_of_bios_6611/index.qmd": {
-    "index.html": "f7af6686"
+    "index.html": "3b1acb9c"
   }
 }

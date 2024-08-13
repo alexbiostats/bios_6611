@@ -2,12 +2,9 @@
 title: "BIOS 6611"
 toc: FALSE
 format:
-  html:
-    theme: flatly
+  html
 include-in-header:
   - hero-image.html
-  - header.html
-  - header-tracker.html
 ---
 
 ***This course website is for Fall 2020/2021/2022. Note that later semesters may use different materials and cover different topics.***
