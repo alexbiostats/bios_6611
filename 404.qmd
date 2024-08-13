@@ -1,8 +1,5 @@
 ---
 title: "Page Not Found"
-toc: FALSE
-format:
-  html
 ---
 
 Baisy the Bayesian pupper thinks you may have specified a bad prior. Try specifying a new prior.
