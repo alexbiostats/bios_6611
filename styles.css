@@ -39,3 +39,22 @@
   font-weight: bold;
 }
 
+.popover-header {
+  margin-top: 0 !important;
+}
+
+/* This modifies the R code chunks and output to reflect the default colors */
+pre {
+    display: block;
+    padding: 10px;
+    margin: 0 0 10.5px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: #333;
+    background-color: #f5f5f5;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+

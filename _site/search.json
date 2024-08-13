@@ -1,0 +1,156 @@
+[
+  {
+    "objectID": "journal_of_bios_6611/index.html",
+    "href": "journal_of_bios_6611/index.html",
+    "title": "Journal of BIOS 6611 Guide for Authors",
+    "section": "",
+    "text": "The Journal of BIOS 6611 is the official internal publication of the Biostatistical Methods I course at the University of Colorado Anschutz Medical Campus. Each year (volume) of the journal encompasses two distinct issues: one focusing on simulation studies and another on applied data analysis. Specific details as to project deadlines, rubrics, and more can be found for current students on the Canvas course page. The details below are meant to mimic those of real journal websites for submission to provide practice for future submissions.\n\n\nTwo types of articles are accepted:\n\nSimulation studies: these articles focus on the use of simulation studies to explore research questions that do not involve “real” data. Articles may include exploration of theorems discussed in class, evaluation of test properties under various assumptions, illustration of power calculations for unique problems, or other applications where simulation studies may be of interest.\nBrief reports: these articles are short analyses to answer a research question from real world data. Articles must include at least one use of resampling (either bootstrap resampling to describe the variability of parameters of interest or permutation testing to calculate a p-value)."
+  },
+  {
+    "objectID": "journal_of_bios_6611/index.html#types-of-articles",
+    "href": "journal_of_bios_6611/index.html#types-of-articles",
+    "title": "Journal of BIOS 6611 Guide for Authors",
+    "section": "",
+    "text": "Two types of articles are accepted:\n\nSimulation studies: these articles focus on the use of simulation studies to explore research questions that do not involve “real” data. Articles may include exploration of theorems discussed in class, evaluation of test properties under various assumptions, illustration of power calculations for unique problems, or other applications where simulation studies may be of interest.\nBrief reports: these articles are short analyses to answer a research question from real world data. Articles must include at least one use of resampling (either bootstrap resampling to describe the variability of parameters of interest or permutation testing to calculate a p-value)."
+  },
+  {
+    "objectID": "journal_of_bios_6611/index.html#file-formats",
+    "href": "journal_of_bios_6611/index.html#file-formats",
+    "title": "Journal of BIOS 6611 Guide for Authors",
+    "section": "File Formats",
+    "text": "File Formats\nArticles should be submitted in a format compatible with Canvas SpeedGrader (e.g., DOCX or PDF).\nPreferably, articles will be written using R Markdown. All files will ultimately be converted to PDF for inclusion in the journal issue disseminated internally within the class."
+  },
+  {
+    "objectID": "journal_of_bios_6611/index.html#page-limits",
+    "href": "journal_of_bios_6611/index.html#page-limits",
+    "title": "Journal of BIOS 6611 Guide for Authors",
+    "section": "Page Limits",
+    "text": "Page Limits\nSimulation studies have an expected page length of at least 1.5 pages and no more than 2 pages.\nBrief reports have an expected page length of at least 2.5 pages and no more than 3 pages.\nThese pages limits include the required figure(s) and table(s), but not references."
+  },
+  {
+    "objectID": "journal_of_bios_6611/index.html#font-size-and-spacing",
+    "href": "journal_of_bios_6611/index.html#font-size-and-spacing",
+    "title": "Journal of BIOS 6611 Guide for Authors",
+    "section": "Font Size and Spacing",
+    "text": "Font Size and Spacing\nUse a standard font size and any standard font. Articles should be single spaced."
+  },
+  {
+    "objectID": "journal_of_bios_6611/index.html#title-and-author-information",
+    "href": "journal_of_bios_6611/index.html#title-and-author-information",
+    "title": "Journal of BIOS 6611 Guide for Authors",
+    "section": "Title and Author Information",
+    "text": "Title and Author Information\nThe article should have an informative title. Additionally, author information should include:\n\nAuthor name\nAuthor degrees\nAuthor affiliation (e.g., BIOS MS Student, EPID MPH Student, Baisy’s Lab, etc.)"
+  },
+  {
+    "objectID": "journal_of_bios_6611/index.html#abstract-and-keywords",
+    "href": "journal_of_bios_6611/index.html#abstract-and-keywords",
+    "title": "Journal of BIOS 6611 Guide for Authors",
+    "section": "Abstract and Keywords",
+    "text": "Abstract and Keywords\nA short abstract should describe the problem, data, and results.\nImmediately after the abstract, provide a maximum of 5 keywords, avoiding general and plural terms and multiple concepts (avoid, for example, ‘and’, ‘of’). These keywords will be used for indexing purposes."
+  },
+  {
+    "objectID": "journal_of_bios_6611/index.html#article-body-structure",
+    "href": "journal_of_bios_6611/index.html#article-body-structure",
+    "title": "Journal of BIOS 6611 Guide for Authors",
+    "section": "Article Body Structure",
+    "text": "Article Body Structure\nArticles should follow a similar structure to that outlined below:\n\nIntroduction, Background\nMotivating Problem, Theorem Description (for simulation studies); Materials and Methods, Study Design (for brief reports)\nSimulation Set-up, Statistical Methods, Statistical Analyses\nResults\nDiscussion, Conclusion\n\nNote, these exact names do not need to be used and can be customized to your given article, analysis, and context."
+  },
+  {
+    "objectID": "journal_of_bios_6611/index.html#tables-and-figures",
+    "href": "journal_of_bios_6611/index.html#tables-and-figures",
+    "title": "Journal of BIOS 6611 Guide for Authors",
+    "section": "Tables and Figures",
+    "text": "Tables and Figures\nAll tables and figures should be “publication ready” with informative titles and labels. Where applicable, units of measurement should be included. Variable names from code should be replaced with meaningful labels (e.g., instead of “outcome_variable4” write the actual outcome).\nSimulation studies must include at least one table and one figure, but more may be included. These count towards the two page limit.\nBrief reports must include a “Table 1” that describes the study population as well as at least one figure. Additional tables and figures may be included as necessary to present and summarize results. These count towards the three page limit."
+  },
+  {
+    "objectID": "journal_of_bios_6611/index.html#decimal-numerals",
+    "href": "journal_of_bios_6611/index.html#decimal-numerals",
+    "title": "Journal of BIOS 6611 Guide for Authors",
+    "section": "Decimal Numerals",
+    "text": "Decimal Numerals\nTo enhance readability and clarity of the text as well as tables and figures, decimal numerals should - with the obvious exception of P-values - be rounded to the unit whenever possible (i.e. in all cases in which the rounding procedure does not change the meaning)."
+  },
+  {
+    "objectID": "journal_of_bios_6611/index.html#acknowledgments",
+    "href": "journal_of_bios_6611/index.html#acknowledgments",
+    "title": "Journal of BIOS 6611 Guide for Authors",
+    "section": "Acknowledgments",
+    "text": "Acknowledgments\nCollate acknowledgements in a separate section at the end of the article before the references and do not, therefore, include them on the title page, as a footnote to the title or otherwise. List here those individuals who provided help during the research (e.g., providing language help, writing assistance or proof reading the article, etc.)."
+  },
+  {
+    "objectID": "journal_of_bios_6611/index.html#references",
+    "href": "journal_of_bios_6611/index.html#references",
+    "title": "Journal of BIOS 6611 Guide for Authors",
+    "section": "References",
+    "text": "References\nAny style of reference is acceptable as long as formatting is consistent."
+  },
+  {
+    "objectID": "journal_of_bios_6611/index.html#supplemental-materials",
+    "href": "journal_of_bios_6611/index.html#supplemental-materials",
+    "title": "Journal of BIOS 6611 Guide for Authors",
+    "section": "Supplemental Materials",
+    "text": "Supplemental Materials\nGiven the small page limits, it is acceptable to include additional tables and figures beyond the required minimum of one table and one figure in a Supplemental Materials section if needed. These figures and tables should be referenced in the text as Figure S1, Table S1, etc.\nWhile you should direct the reader to the Supplemental Materials to access the additional tables, figures, or information, the paper itself should be able to be largely understood as though a reader did not have access to the supplement."
+  },
+  {
+    "objectID": "journal_of_bios_6611/index.html#reproducible-research-principles",
+    "href": "journal_of_bios_6611/index.html#reproducible-research-principles",
+    "title": "Journal of BIOS 6611 Guide for Authors",
+    "section": "Reproducible Research Principles",
+    "text": "Reproducible Research Principles\nAn appendix with R, SAS, or other code should be included starting on a new page after your references with code that is clearly commented for the simulations, analyses, figures, and tables ultimately included in the report. Code that was ultimately not used in the final report should be excluded from this appendix."
+  },
+  {
+    "objectID": "bios_6611_materials/index.html",
+    "href": "bios_6611_materials/index.html",
+    "title": "BIOS 6611 Materials",
+    "section": "",
+    "text": "This page includes the asynchronous lecture videos, PDF slides, and other materials for Biostatistical Methods I (BIOS 6611) for Fall 2020/2021/2022. Note that later semesters may use different materials and cover different topics. The material is broadly broken down by theme with links provided to download materials or view the videos. A brief overview of the material covered in a given lecture can be viewed by hovering over or clicking the given “Lecture Topic”."
+  },
+  {
+    "objectID": "bios_6611_materials/index.html#probability-and-distributions",
+    "href": "bios_6611_materials/index.html#probability-and-distributions",
+    "title": "BIOS 6611 Materials",
+    "section": "Probability and Distributions",
+    "text": "Probability and Distributions\nThe first theme in BIOS 6611 discusses core concepts in statistics (e.g., simulation studies, estimators, estimation) and both discrete and continuous probability distributions.\n\n\n\n\n\nLecture Topic\n\n\nSlides\n\n\nVideo Link\n\n\n\n\n\n\nIntro to Statistical Topics\n\n\nPDF\n\n\nYouTube\n\n\n\n\nProperties of Estimators\n\n\nPDF\n\n\nYouTube\n\n\n\n\nSimulations Studies\n\n\nPDF\n\n\nYouTube\n\n\n\n\nBrief, but Complete, Interpretations\n\n\nPDF\n\n\nYouTube\n\n\n\n\nDiscrete Distributions\n\n\nPDF\n\n\nYouTube\n\n\n\n\nCommon Discrete Distributions\n\n\nPDF\n\n\nYouTube\n\n\n\n\nProbability and Bayes Theorem\n\n\nPDF\n\n\nYouTube\n\n\n\n\nMethods of Estimation (MoM, MLE, LSE)\n\n\nPDF\n\n\nYouTube\n\n\n\n\nContinuous Distributions\n\n\nPDF\n\n\nYouTube\n\n\n\n\nThe Normal Distribution\n\n\nPDF\n\n\nYouTube\n\n\n\n\nAssessing Normality in Samples\n\n\nPDF\n\n\nYouTube\n\n\n\n\nThe Central Limit Theorem\n\n\nPDF\n\n\nYouTube\n\n\n\n\nOther Continuous Distributions\n\n\nPDF\n\n\nYouTube\n\n\n\n\nDeriving the Sampling Distribution of the Sample Mean and Sample Variance\n\n\nPDF\n\n\nYouTube"
+  },
+  {
+    "objectID": "bios_6611_materials/index.html#hypothesis-testing-power-sample-size",
+    "href": "bios_6611_materials/index.html#hypothesis-testing-power-sample-size",
+    "title": "BIOS 6611 Materials",
+    "section": "Hypothesis Testing, Power, Sample Size",
+    "text": "Hypothesis Testing, Power, Sample Size\nThe second theme of BIOS 6611 introduces the framework for hypothesis testing based on null hypothesis significance testing (NHST). We then discuss the concept of power calculations and work through practical examples by hand and using R to estimate power, sample size, or a detectable difference.\n\n\n\n\n\nLecture Topic\n\n\nSlides\n\n\nVideo Link\n\n\n\n\n\n\nFisher’s p-value\n\n\nPDF\n\n\nYouTube\n\n\n\n\nThe Neyman-Pearson Tradeoffs\n\n\nPDF\n\n\nYouTube\n\n\n\n\nNull Hypothesis Significance Testing (Fisher-Neyman-Pearson Hybrid)\n\n\nPDF\n\n\nYouTube\n\n\n\n\nStatistical Power and Derivations for a Two-Sided, One-Sample Z-test\n\n\nPDF\n\n\nYouTube\n\n\n\n\nPower Calculation Examples in R\n\n\nPDF\n\n\nYouTube"
+  },
+  {
+    "objectID": "bios_6611_materials/index.html#conditional-probability-effect-measures-inference-for-2x2-tables",
+    "href": "bios_6611_materials/index.html#conditional-probability-effect-measures-inference-for-2x2-tables",
+    "title": "BIOS 6611 Materials",
+    "section": "Conditional Probability, Effect Measures, Inference for 2x2 Tables",
+    "text": "Conditional Probability, Effect Measures, Inference for 2x2 Tables\nOur third theme in BIOS 6611 explores conditional probability and its application for diagnostic testing as well as studies with 2x2 tables and inference based on risk differences, risk ratios, or odds ratios.\n\n\n\n\n\nLecture Topic\n\n\nSlides\n\n\nVideo Link\n\n\n\n\n\n\nDiagnostic Testing: Sensitivity and Specificity\n\n\nPDF\n\n\nYouTube\n\n\n\n\nDiagnostic Testing: Predictive Values and Odds\n\n\nPDF\n\n\nYouTube\n\n\n\n\nDiagnostic Testing: ROC Curves\n\n\nPDF\n\n\nYouTube\n\n\n\n\nObservational Study Designs\n\n\nPDF\n\n\nYouTube\n\n\n\n\n2x2 Tables Measures of Effect: RD, RR, OR\n\n\nPDF\n\n\nYouTube\n\n\n\n\n2x2 Tables and Tests of Association\n\n\nPDF\n\n\nYouTube"
+  },
+  {
+    "objectID": "bios_6611_materials/index.html#bootstrap-sampling-and-nonparametric-methods",
+    "href": "bios_6611_materials/index.html#bootstrap-sampling-and-nonparametric-methods",
+    "title": "BIOS 6611 Materials",
+    "section": "Bootstrap Sampling and Nonparametric Methods",
+    "text": "Bootstrap Sampling and Nonparametric Methods\nThe fourth theme of BIOS 6611 explores bootstrap resampling, permutation testing, and other nonparametric methods for hypothesis testing.\n\n\n\n\n\nLecture Topic\n\n\nSlides\n\n\nVideo Link\n\n\n\n\n\n\nBootstrap Resample Introduction\n\n\nPDF\n\n\nYouTube\n\n\n\n\nConfidence Intervals and One-Sample Bootstraps\n\n\nPDF\n\n\nYouTube\n\n\n\n\nTwo-Sample Bootstraps\n\n\nPDF\n\n\nYouTube\n\n\n\n\nPermutation Tests\n\n\nPDF\n\n\nYouTube\n\n\n\n\nNonparametric Tests\n\n\nPDF\n\n\nYouTube"
+  },
+  {
+    "objectID": "bios_6611_materials/index.html#simple-linear-regression",
+    "href": "bios_6611_materials/index.html#simple-linear-regression",
+    "title": "BIOS 6611 Materials",
+    "section": "Simple Linear Regression",
+    "text": "Simple Linear Regression\nIn our fifth theme of BIOS 6611 we introduce, derive, and apply methods for linear regression with a single predictor for a continuous outcome. The lectures include a mix of applied and theoretical content.\n\n\n\n\n\nLecture Topic\n\n\nSlides\n\n\nVideo Link\n\n\n\n\n\n\nSimple Linear Regression (SLR) Introduction\n\n\nPDF\n\n\nYouTube\n\n\n\n\nSLR: Find the “Best” Fit and Summary Formulas\n\n\nPDF\n\n\nYouTube\n\n\n\n\nSLR: Simple Application and Hypothesis Testing\n\n\nPDF\n\n\nYouTube\n\n\n\n\nSLR: Quality of Fit, F-test, and ANOVA Table\n\n\nPDF\n\n\nYouTube\n\n\n\n\nSLR: Prediction vs. Confidence Intervals\n\n\nPDF\n\n\nYouTube\n\n\n\n\nDerivation of SLR Regression Coefficients\n\n\nPDF\n\n\nYouTube\n\n\n\n\nVariance of Regression Coefficients\n\n\nPDF\n\n\nYouTube\n\n\n\n\nCoefficient of Determination and Correlation Connection\n\n\nPDF\n\n\nYouTube\n\n\n\n\nResiduals\n\n\nPDF\n\n\nYouTube\n\n\n\n\nDiagnostic Plots\n\n\nPDF\n\n\nYouTube\n\n\n\n\nSLR Example: Continuous Predictor\n\n\nPDF\n\n\nYouTube\n\n\n\n\nSLR Example: Categorical Predictor\n\n\nPDF\n\n\nYouTube\n\n\n\n\nTransformations to Remove Heteroscedasticity\n\n\nPDF\n\n\nYouTube"
+  },
+  {
+    "objectID": "bios_6611_materials/index.html#multiple-linear-regression",
+    "href": "bios_6611_materials/index.html#multiple-linear-regression",
+    "title": "BIOS 6611 Materials",
+    "section": "Multiple Linear Regression",
+    "text": "Multiple Linear Regression\nThe final theme of BIOS 6611 expands our linear regression framework to account for more than one predictor. This results in a variety of different applications and topics that are broken down further into subthemes below.\n\nMLR Introduction\n\n\n\n\n\nLecture Topic\n\n\nSlides\n\n\nVideo Link\n\n\n\n\n\n\nMultiple Linear Regression (MLR): Motivation, Assumptions, Example\n\n\nPDF\n\n\nYouTube\n\n\n\n\nMLR: Diagnostic Plots and Multicollinearity\n\n\nPDF\n\n\nYouTube\n\n\n\n\nMLR: Inference on Independent Variables\n\n\nPDF\n\n\nYouTube\n\n\n\n\nMultiple Testing/Comparisons\n\n\nPDF\n\n\nYouTube\n\n\n\n\n\n\n\nAnalysis of Variance (ANOVA) and Post-hoc Testing\n\n\n\n\n\nLecture Topic\n\n\nSlides\n\n\nVideo Link\n\n\n\n\n\n\nCoding Categorical Variables\n\n\nPDF\n\n\nYouTube\n\n\n\n\nOne-Way ANOVA and Connections to Regression\n\n\nPDF\n\n\nYouTube\n\n\n\n\nPost-hoc Testing for ANOVA\n\n\nPDF\n\n\nYouTube\n\n\n\n\nKruskal-Wallis: A Nonparametric ANOVA\n\n\nPDF\n\n\nYouTube\n\n\n\n\n\n\n\nSpecial Topics\n\n\n\n\n\nLecture Topic\n\n\nSlides\n\n\nVideo Link\n\n\n\n\n\n\nGeneral Linear Hypothesis Testing\n\n\nPDF\n\n\nYouTube\n\n\n\n\nConfounders and Precision Variables\n\n\nPDF\n\n\nYouTube\n\n\n\n\nMediation Models\n\n\nPDF\n\n\nYouTube\n\n\n\n\nPolynomial Regression\n\n\nPDF\n\n\nYouTube\n\n\n\n\nInteraction/Effect Modification\n\n\nPDF\n\n\nYouTube\n\n\n\n\nModel Selection Procedures\n\n\nPDF\n\n\nYouTube\n\n\n\n\nVariable Selection Considerations\n\n\nPDF\n\n\nYouTube\n\n\n\n\nDiagnostics for Outliers and Influential Points\n\n\nPDF\n\n\nYouTube\n\n\n\n\nSupplemental Material on Contrasts\n\n\nPDF\n\n\n–\n\n\n\n\n\n\n\nMatrix Approaches to Regression\n\n\n\n\n\nLecture Topic\n\n\nSlides\n\n\nVideo Link\n\n\n\n\n\n\nLinear Regression in Matrix Format\n\n\nPDF\n\n\nYouTube\n\n\n\n\nLinear Regression with Matrices in SAS\n\n\nSAS\n\n\nYouTube\n\n\n\n\nLinear Regression with Matrices in R\n\n\nHTML\n\n\nYouTube\n\n\n\n\nMLE and Regression\n\n\nPDF\n\n\nYouTube\n\n\n\n\nExponential Families and Generalized Linear Models\n\n\nPDF\n\n\nYouTube"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "BIOS 6611",
+    "section": "",
+    "text": "This course website is for Fall 2020/2021/2022. Note that later semesters may use different materials and cover different topics.\n\nDescription\nBiostatistical Methods I (BIOS 6611) is the first of a two-semester applied statistics sequence designed to equip students with a practical knowledge of the quantitative methods most frequently used in medical research. This course is an introduction to applied biostatistics, including probability models, simulation, sampling distributions, hypothesis testing, resampling methods, linear regression and the use of the R and SAS statistical packages. Concepts will be illustrated using examples in the fields of medicine, biology, epidemiology and public health. Written and graphical presentation and interpretation of methods and results will be emphasized.\n\n\nPrerequisites\nDifferential and integral calculus is a prerequisite for the course, along with an introductory course in applied probability and statistics. Previous experience with a statistical package (e.g. R, SAS, Stata, SPSS) is also assumed. Matrix/linear algebra will also be introduced and past coursework or experience is beneficial.\n\n\nLecture Videos, Slides, and Other Materials\nAll BIOS 6611 lecture videos have been broken down into modular sections and posted to YouTube. To view the list of videos, download slides, and access other materials, please visit the BIOS 6611 Materials page.\n\n\nJournal of BIOS 6611\nThe Journal of BIOS 6611 is the official publication for Biostatistical Methods I. It has two annual issues relating to simulation studies and applied data analysis. To learn more about the journal’s requirements for submission, please visit the the Guide for Authors page."
+  }
+]
