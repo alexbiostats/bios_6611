@@ -24,14 +24,14 @@ website:
             href: https://www.alexkaizer.com/study_design_berd.html
           - text: "WNAR Adaptive and Bayesian Clinical Trial Design Short Course"
             href: https://www.alexkaizer.com/adaptivetrials_sc 
-      - text: "BIOS 6618"
+      - text: "BIOS 6611"
         menu:
           - text: "Home"
             href: index.html
           - text: "Materials"
-            href: bios_6618_materials.html 
-          - text: "Journal of BIOS 6618"
-            href: journal_of_bios_6618.html
+            href: bios_6611_materials
+          - text: "Journal of BIOS 6611"
+            href: journal_of_bios_6611
     right:
       - icon: envelope
         href: mailto:alex.kaizer@cuanschutz.edu
