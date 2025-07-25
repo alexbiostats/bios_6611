@@ -78,7 +78,7 @@ prob_dist_desc <- c('The starting point of BIOS 6611, where we discuss what is s
                     'Deriving the sampling distributions of the sample mean and variance and their corresponding properties.'
 )
 
-prob_dist_pdf_link <- paste0('./files/bios6611/',
+prob_dist_pdf_link <- paste0('../files/bios6611/',
                              c('W1/StatisticalConcepts.pdf',
                                'W1/PropertiesOfEstimators.pdf',
                                'W1/Simulations.pdf',
@@ -150,7 +150,7 @@ hyp_test_desc <- c('Ever wonder where ubiquitous p-value comes from? Well it sta
                    'Examples of power calculations using functions in R.'
 )
 
-hyp_test_pdf_link <- paste0('./files/bios6611/',
+hyp_test_pdf_link <- paste0('../files/bios6611/',
                              c('W4/FishersPvalue.pdf',
                                'W4/Neyman_Pearson_tradeoffs.pdf',
                                'W4/NHST.pdf',
@@ -207,7 +207,7 @@ diag_2x2_desc <- c('The use of sensitivity and specificity to describe the perfo
                    'Use of the Chi-squared, Fisher\'s, Barnard\'s, and McNemar\'s tests for 2x2 contingency tables.'
 )
 
-diag_2x2_pdf_link <- paste0('./files/bios6611/',
+diag_2x2_pdf_link <- paste0('../files/bios6611/',
                              c('W5/Conditional_Probability_SeSp.pdf',
                                'W5/Conditional_Probability_PPVNPV.pdf',
                                'W5/Conditional_Probability_ROC.pdf',
@@ -264,7 +264,7 @@ boot_nonp_desc <- c('Bootstrapping resamples with replacement to estimate the sa
                     'The Wilcoxon rank sum (two independent samples), Wilcoxon signed rank (paired samples), and sign tests are presented with examples. Additionally, tests to compare the medians of two groups are denoted.'
 )
 
-boot_nonp_pdf_link <- paste0('./files/bios6611/',
+boot_nonp_pdf_link <- paste0('../files/bios6611/',
                              c('W6/Bootstrap_intro.pdf',
                                'W6/Bootstrap_CIs_oneSampExamp.pdf',
                                'W6/Bootstrap_CIs_twoSampExamp.pdf',
@@ -335,7 +335,7 @@ simp_reg_desc <- c('Simple linear regression allows a continuous outcome with an
                    'In cases of model assumptions being violated, we can sometimes use data transformations (e.g., log-transform, square root) to meet our assumptions.'
 )
 
-simp_reg_pdf_link <- paste0('./files/bios6611/',
+simp_reg_pdf_link <- paste0('../files/bios6611/',
                              c('W7/SLR_intro.pdf',
                                'W7/SLR_bestFit.pdf',
                                'W7/SLR_application.pdf',
@@ -406,7 +406,7 @@ mult_reg_desc <- c('The extension from one predictor (simple) to two or more pre
                    'Multiple comparisons represent a potential challenge in statistical inference. Different approaches to adjust for multiple comparisons are included, with an emphasis on the False Discovery Rate (FDR).'
 )
 
-mult_reg_pdf_link <- paste0('./files/bios6611/',
+mult_reg_pdf_link <- paste0('../files/bios6611/',
                              c('W10/MLR_Introduction.pdf',
                                'W10/MLR_diagnostics_vif.pdf',
                                'W10/MLR_IVinference.pdf',
@@ -455,7 +455,7 @@ anova_post_desc <- c('Different strategies for coding categorical variables are 
                      'If our parametric assumptions for one-way ANOVA are violated, we can conduct a nonparametric comparison of the mean rank across groups.'
 )
 
-anova_post_pdf_link <- paste0('./files/bios6611/',
+anova_post_pdf_link <- paste0('../files/bios6611/',
                              c('W11/CodingCategoricalVariables.pdf',
                                'W11/ANOVA.pdf',
                                'W11/ANOVA_posthoc.pdf',
@@ -515,7 +515,7 @@ reg_topics_desc <- c('An approach to evaluating either multiple hypotheses simul
                      'We used to talk a lot more about contrasts, but lots of it is now behind the scenes or has other approaches we have used. In this supplement you can learn more about the wild, zany world of contrasts.'
 )
 
-reg_topics_pdf_link <- paste0('./files/bios6611/',
+reg_topics_pdf_link <- paste0('../files/bios6611/',
                              c('W12/GLH.pdf',
                                'W12/confounding_precision.pdf',
                                'W12/mediation.pdf',
@@ -576,7 +576,7 @@ mat_reg_desc <- c('Our prior lectures have focused on an algebraic approach to r
                   'To prepare for BIOS 6612, the topic of exponential families and generalized linear models, of which linear regression is a subsest of, is introduced.'
 )
 
-mat_reg_pdf_link <- paste0('./files/bios6611/',
+mat_reg_pdf_link <- paste0('../files/bios6611/',
                              c('W15/linear_regression_with_matrices.pdf',
                                'W15/matrices_in_sas.sas',
                                'W15/matrices_in_R.html',
